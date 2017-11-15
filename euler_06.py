@@ -6,3 +6,6 @@ def run():
         squared_sum += i
     squared_sum *= squared_sum
     return squared_sum - sum_squares
+
+if __name__ == "__main__":
+    run()

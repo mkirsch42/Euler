@@ -11,3 +11,6 @@ def run():
     for n, c in max_f.items():
         prod *= n**c
     return prod
+
+if __name__ == "__main__":
+    run()

@@ -6,3 +6,7 @@ def run():
             sum += b
         a, b = (b, a+b)
     return sum
+
+if __name__ == "__main__":
+    run()
+    

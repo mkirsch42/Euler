@@ -13,3 +13,6 @@ def run():
         n += 1
         p = primes.index(True, p+1)
     return p
+
+if __name__ == "__main__":
+    run()

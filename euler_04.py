@@ -21,3 +21,6 @@ def run():
         if is_3digit_product(make_palindrome(n)):
             return make_palindrome(n)
         n -= 1
+
+if __name__ == "__main__":
+    run()

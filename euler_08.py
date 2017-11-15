@@ -16,3 +16,6 @@ def run():
         m = max(m, mult13(v))
         v //= 10
     return m
+
+if __name__ == "__main__":
+    run()
