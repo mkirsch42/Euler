@@ -43,3 +43,10 @@ def prime_factors(n):
             factors[i] = c
         i += 1
     return factors
+
+def num_divisors(n):
+    fac = prime_factors(n)
+    count = 1
+    for n in fac.values():
+        count *= n + 1
+    return count
