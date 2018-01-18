@@ -2,18 +2,19 @@ import math
 import numpy as np
 from bitarray import bitarray
 
+
 def check_prime(n):
     if n == 1:
         return False
     if n < 4:
         return True
-    if n%2 == 0:
+    if n % 2 == 0:
         return False
     if n < 9:
         return True
     if n%3 == 0:
         return False
-    
+
     r = math.floor(math.sqrt(n))
     for f in np.arange(5, r+1, 6):
         if n%f == 0 or n%(f+2) == 0:
@@ -30,6 +31,10 @@ def sieve(n):
             comp[i] = True
         p = comp.index(False, p+1)
     return comp
+
+def sieve_list(n):
+    return [i for i, v in enumerate(sieve(n).tolist()) if not v]
+
 
 def prime_factors(n):
     factors = {}
